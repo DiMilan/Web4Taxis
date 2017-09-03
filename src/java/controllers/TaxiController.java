@@ -25,7 +25,7 @@ public class TaxiController {
 
     @RequestMapping(value = "list", method = RequestMethod.GET)
     public String listTaxis(Model model) {
-        model.addAttribute("taxiList", taximanager.findAll());
+        model.addAttribute("taxisList", taximanager.findAll());
         return "listTaxis";
 
     }
