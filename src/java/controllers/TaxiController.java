@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import services.ITaximanager;
 import services.Taximanager;
 
 /**
@@ -17,11 +18,11 @@ import services.Taximanager;
  * @author iMac
  */
 @Controller
-//@RequestMapping("taxi")
+@RequestMapping("")
 public class TaxiController {
     
     @Autowired
-    private Taximanager taximanager;
+    private ITaximanager taximanager;
 
     @RequestMapping(value = "list", method = RequestMethod.GET)
     public String listTaxis(Model model) {
