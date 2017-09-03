@@ -9,8 +9,29 @@
         <title>Taxis</title>
     </head>
     <body>
-        <h2>Taxis</h2>
-        
+           <h2>Taxis</h2>
+        <table width="50%">
+            <tr>
+                <th>Id</th>
+                <th>Taxi Name</th>
+                <th>ZIP Code</th>
+                <th>Number of Passengers</th>
+            </tr>
+
+             <c:forEach items="${taxisList}" var="taxi">
+                <tr>
+                    <td>
+                        <a href="${taxi.id}.htm">
+                            ${taxi.id}</a> 
+                    </td> 
+                    
+                    <td>${taxi.name}</td>
+                    <td>${taxi.postcode}</td>
+                    <td>${taxi.passengers}</td>
+                </tr>
+            </c:forEach>
+
+        </table>	
         <br>
     </body>
 </html>
