@@ -18,7 +18,7 @@ import services.Taximanager;
  * @author iMac
  */
 @Controller
-@RequestMapping("")
+@RequestMapping("/")
 public class TaxiController {
     
     @Autowired
