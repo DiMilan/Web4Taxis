@@ -11,14 +11,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import services.ITaximanager;
-import services.Taximanager;
 
 /**
  *
  * @author iMac
  */
 @Controller
-@RequestMapping("/")
+//@RequestMapping("/")
 public class TaxiController {
     
     @Autowired

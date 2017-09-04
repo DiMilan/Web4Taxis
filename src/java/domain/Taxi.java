@@ -23,14 +23,14 @@ public class Taxi {
 
 
     int id;
-    String naam;
+    String name;
     int postcode;
     int passengers;
     Person driver;
     
-    public Taxi(int id, String naam, int postcode, int passengers, Person driver) {
+    public Taxi(int id, String name, int postcode, int passengers, Person driver) {
         this.id = id;
-        this.naam =naam;
+        this.name =name;
         this.postcode = postcode;
         this.passengers = passengers;
         this.driver = driver;

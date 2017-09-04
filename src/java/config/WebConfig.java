@@ -17,7 +17,7 @@ import services.Taximanager;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("controller")
+@ComponentScan("controllers")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Bean
